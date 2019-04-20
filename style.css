@@ -1,0 +1,82 @@
+.jumbotron img{
+	height    : 200px;
+	border    :4px solid #fff;
+	box-shadow: 1px 1px 10px #000;
+
+}
+
+hr{
+	width     : 250px;
+	border-top: 3px solid #999;
+}
+
+section{
+	min-height: 400px;
+}
+.pKiri, .pKanan{
+	opacity   : 0;
+	transform : translate(-50px,0) rotate(15deg);
+	transition: 1s;
+}
+.pKanan{
+	transform: translate(50px,0) rotate(-15deg);
+}
+
+.pKiri.pMuncul, .pKanan.pMuncul{
+	opacity  : 1;
+	transform: translate(0,0);
+}
+
+.portfolio{
+	background-color: #eee;
+}
+
+.portfolio .thumbnail{
+	opacity: 0;
+	transform: translate(0, -40px);
+	transition:0.3s;
+}
+
+.portfolio .thumbnail.muncul{
+	opacity: 1;
+	transform: translate(0,0);
+
+}
+
+footer{
+	position        : absolute;
+	width           : 100%;
+	height          : 120px;
+	bottom          : 0;
+	background-color: #333;
+	padding-top     : 30px;
+	
+}
+footer p{
+	color: #aaa;
+	font-size: 1em;
+}
+html{
+	position: relative;
+}
+body{
+	margin-top: 50px;
+	margin-bottom: 130px;
+}
+.jumbotron{
+	background-image: url(img/parallax.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 -200px;
+	background-attachment: fixed;
+	height: 450;
+	color: #eaeaea;
+	overflow: hidden;
+}
+.jumbotron h1, .jumbotron p{
+	text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+	/*text-shadow: horizontal vertical blur warna(rgba:0,0,0,(opacity));
+}
+footer p i {
+	color: salmon;
+}
